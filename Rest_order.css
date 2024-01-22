@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: olive;
+  background-color: grey;
 }
   
   header {
@@ -20,7 +20,7 @@ body {
   }
   
   nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
   }
   .math{
@@ -45,19 +45,19 @@ body {
   }
   
   .recipe {
-    border: 1px solid #ccc;
+  
     border-radius: 8px;
     padding: 20px;
-    /* margin-bottom: 20px; */
-    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 1s ease;
     display: inline-block;
+    
   }
   
   .recipe:hover {
     transform: translateY(-5px);
-    background-color: indianred;
+    background: radial-gradient(#965913, #475147);
+
     border-radius: 50px ;
   }
   
@@ -83,7 +83,10 @@ body {
   .recipe img:hover {
     transform: scale(1.05);
     background-color: white;
-    border-radius: 50%;;
+    border-radius: 50%;
+    border: 5px solid red;
+    
+    
   }
   #submit{
     margin-left: 30px;
@@ -105,6 +108,14 @@ body {
     height: 30px ;
     border-radius: 10px;
      
+  }
+  #overallTotalInput{
+    width: 120px;
+    border: none;
+    font-size: 20px;
+    color: wheat;
+
+    background-color: gray;
   }
   #cancel:hover{
     background-color: #333;
