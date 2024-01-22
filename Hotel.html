@@ -1,0 +1,174 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details</title>
+    <style>
+       
+    body {
+      color: #2b2c48;
+  font-family: "Jost", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+    }
+    header {
+      text-align: left;
+      margin-left: 20px;
+      font-size: 36px;
+      padding: 10px;
+      
+      color:#f44336;
+      width: 100%;
+      position: fixed;
+      text-align: center; 
+      top: 0;
+    }
+    #detailsContainer {
+      text-align: center;
+      margin-top: 140px;
+      padding: 20px;
+    }
+    .inputField {
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+      border-bottom: #333;
+      border-radius: 5px; */
+      /* border: 2px solid none#ccc; */
+      /* border: none; */
+      width: 80%;
+      color:red;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    #submitBtn, #cancelBtn {
+      padding: 12px 24px;
+      margin: 0 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+    #submitBtn {
+      background-color: #4CAF50;
+    }
+    #cancelBtn {
+      background-color: #f44336;
+    }
+    #submitBtn:hover, #cancelBtn:hover {
+      background-color: #333;
+    }
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+      font-size: 20px;
+    }
+    #circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 20px auto;
+      position: relative;
+      background: radial-gradient(#4CAF50, #388E3C);
+      display: none;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+      }
+      50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 20px rgba(76, 175, 80, 0);
+      }
+      100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+      }
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      header {
+        font-size: 24px;
+      }
+      #detailsContainer {
+        margin-top: 180px;
+       
+      }
+      .inputField {
+        width: 90%;
+        max-width: 280px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      header {
+        font-size: 20px;
+      }
+      #detailsContainer {
+        margin-top: 200px;
+      }
+      .inputField {
+        width: 95%;
+        max-width: 260px;
+        font-size: 16px;
+      }
+    }
+    
+    </style>
+  </head>
+  <body>
+    <header>Welcome </header>
+    <div id="detailsContainer">
+      <form id="userDetailsForm">
+        <input type="text" id="nameInput" class="inputField" placeholder="Enter your name" required>
+        <br>
+        <input type="text" id="addressInput" class="inputField" placeholder="Enter your address" required>
+        <br>
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </form>
+      <div id="message"></div>
+      <div id="circle"></div>
+    </div>
+  
+    <script>
+      document.getElementById('userDetailsForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+        
+        var name = document.getElementById('nameInput').value;
+        var address = document.getElementById('addressInput').value;
+        
+        if (name.trim() !== '' && address.trim() !== '') {
+          document.getElementById('message').innerHTML = 'Thank you, ' + name + '!';
+          document.getElementById('circle').style.display = 'block';
+          setTimeout(function() {
+            window.location.href = 'rest_order.html'; // Replace 'e-commerce.html' with the URL of the next page
+          }, 5000);
+        } 
+      });
+  
+      document.getElementById('cancelBtn').addEventListener('click', function() {
+        document.getElementById('userDetailsForm').reset(); // Reset the form fields
+        document.getElementById('message').innerHTML = '';
+        document.getElementById('circle').style.display = 'none';
+      });
+    </script>
+  </body>
+  </html>
+  
+
