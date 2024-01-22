@@ -242,4 +242,248 @@ border: 5px solid rebeccapurple;
   }
 
   /* Other adjustments as needed */
+}/* Updated CSS for the hotel recipes webpage */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .math{
+    display: inline-block; 
+    /* margin-left: 565px; */
+    background-color: f7f7f7;
+     height: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: burlywood;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .recipe-section {
+    margin-bottom: 40px;
+  }
+  
+  .recipe {
+  
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+    display: inline-block;
+    
+  }
+  
+  .recipe:hover {
+    transform: translateY(-5px);
+    background: radial-gradient(#965913, #475147);
+
+    border-radius: 50px ;
+  }
+  
+  .recipe h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .recipe p {
+    margin-bottom: 15px;
+   
+  }
+  
+  .recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe img:hover {
+    transform: scale(1.05);
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid red;
+    
+    
+  }
+  #submit{
+    margin-left: 30px;
+    color: wheat;
+    background-color: green;
+    width: 80px;
+    height: 30px ;
+    border-radius: 10px;
+  
+    
+  }
+  #submit:hover{
+    background-color: #333;
+  }
+  #cancel{
+    color: wheat;
+    background-color: red;
+    width: 80px;
+    height: 30px ;
+    border-radius: 10px;
+     
+  }
+  #overallTotalInput{
+    width: 120px;
+    border: none;
+    font-size: 20px;
+    color: wheat;
+
+    background-color: gray;
+  }
+  #cancel:hover{
+    background-color: #333;
+  }
+  .last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Adjust this according to your layout */
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  a#submit {
+    text-decoration: none;
+  }
+  
+  a#submit input[type="submit"] {
+    display: block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect on hover */
+  }
+  
+  a#submit input[type="submit"]:hover {
+    background-color: #388E3C; /* Darker shade of green on hover */
+  }
+
+  #pay{
+    margin-left: 30px;
+    color: wheat;
+    background-color: dodgerblue;
+    width: 80px;
+    height: 30px ;
+    border-radius: 10px;
+  
+    
+  }
+  #pay:hover{
+    background-color: #333;
+  }
+  #reset{
+    color: wheat;
+    background-color: red;
+    width: 80px;
+    height: 30px ;
+    border-radius: 10px;
+  }
+  #reset:hover{
+    background-color: #333;
+  }
+  #recipe1{
+    width: 370px;
+    border: none; 
+  }
+  #quantity{
+    width: 100px;
+  }
+  .final{
+     /* width: 1000px;  */
+    height: 100px;
+    /* background-color: #333; */
+    text-align: center;
+  }
+  .final h4{
+   
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      color: burlywood;
+  
+  }
+  #back{
+
+    margin-left: 530px;
+       /* //color: wheat; */
+       background-color: royalblue;
+       width: 120px;
+       height: 40px ;
+       border-radius: 50px;
+     
+    }
+    #back:hover{
+background-color: #333;
+border: 5px solid rebeccapurple;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  /* For example, modify header styles */
+  header {
+    padding: 10px;
+  }
+
+  /* Adjust navigation styles */
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  /* Modify recipe card width */
+  .recipe {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust button styles */
+  #submit,
+  #cancel,
+  #pay,
+  #reset,
+  #back {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  /* Other adjustments as needed */
 }
