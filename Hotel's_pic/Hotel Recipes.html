@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/rest_order.html#lunch -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Hotel Recipes</title>
+  <link rel="stylesheet" href="./Hotel Recipes_files/Rest_order.css">
+</head>
+<body>
+  <header>
+    <h1>Hotel Recipes</h1>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/rest_order.html#breakfast">Breakfast</a></li>
+        <li><a href="http://127.0.0.1:5500/rest_order.html#lunch">Lunch</a></li>
+        <li><a href="http://127.0.0.1:5500/rest_order.html#dinner">Dinner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="breakfast" class="recipe-section">
+      <h2>Breakfast Recipes</h2>
+      <div class="recipe">
+        <h3>Poha</h3>
+        <p>A popular Indian breakfast made from flattened rice.</p>
+        <img src="./Hotel Recipes_files/download (1).jpg" alt="Poha">
+      </div>
+      <div class="math">
+        price: 125/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp; <button type="reset" id="cancel"> cancel</button>
+      <div class="recipe" id="recipe1">
+        <h3>Idli Sambhar</h3>
+        <p>Steamed rice cakes served with lentil-based vegetable stew.</p>
+        <img src="./Hotel Recipes_files/idli.jpg" alt="Idli Sambhar">
+      </div>
+      <div class="math">
+        price: 150/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp; <button type="reset" id="cancel"> cancel</button>
+      <!-- Add more breakfast recipes here -->
+    </section>
+
+    <section id="lunch" class="recipe-section">
+      <h2>Lunch Recipes</h2>
+      <div class="recipe" id="recipe1">
+        <h3>Chole Bhature</h3>
+        <p>Chickpea curry served with fried bread.</p>
+        <img src="./Hotel Recipes_files/bhatura.jpg" alt="Chole Bhature">
+      </div>
+      <div class="math">
+        price: 200/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp; <button type="reset" id="cancel"> cancel</button>
+      <div class="recipe" id="recipe1">
+        <h3>Palak Paneer</h3>
+        <p>Spinach curry with Indian cottage cheese.</p>
+        <img src="./Hotel Recipes_files/paalak.jpg" alt="Palak Paneer">
+      </div>
+      <div class="math">
+        price: 300/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp; <button type="reset" id="cancel"> cancel</button>
+      <!-- Add more lunch recipes here -->
+    </section>
+
+    <section id="dinner" class="recipe-section">
+      <h2>Dinner Recipes</h2>
+      <div class="recipe" id="recipe1">
+        <h3>Kadhi Chawal</h3>
+        <p>Kadhi chawal is a popular dish originating from South Asia.</p>
+        <img src="./Hotel Recipes_files/kadhi.jpg" alt="Butter Chicken">
+      </div>
+      <div class="math">
+        price: 300/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp;
+     <button type="reset" id="cancel"> cancel</button>
+      <div class="recipe" id="recipe1">
+        <h3>Rajma Chawal</h3>
+        <p>Red kidney beans curry served with rice.</p>
+        <img src="./Hotel Recipes_files/Rajma1.jpg" alt="Rajma Chawal">
+      </div>
+      <div class="math">
+        price: 350/plate &nbsp;&nbsp;&nbsp;<span style="color: red;">||</span> Quantity:
+        <input type="number" id="quantity" value="0" min="0" placeholder="Enter quantity"> &nbsp;&nbsp;
+        <span style="color: red;">||</span> <span id="totalLabel">Total:</span><span id="totalCost">0</span>
+    </div> <span style="color: red;">||</span>&nbsp;&nbsp;<button type="submit" id="submit"> order</button>&nbsp;&nbsp; 
+    <button type="reset" id="cancel"> cancel</button>
+      <!-- Add more dinner recipes here -->
+    </section>
+    <div class="final"> <h4 style="display: inline-block;">Total: </h4> &nbsp;&nbsp; <input type="number" id="overallTotalInput" readonly="">
+      <button type="submit" id="pay" disabled=""> Pay Now
+
+    </button>&nbsp;&nbsp; <button type="reset" id="reset"> reset</button></div>
+    
+  </main>
+  <div>
+   <a href="http://127.0.0.1:5500/Hotel.html"> <button type="reset" id="back">BACK </button></a> 
+  </div>
+  <div id="paymentMessage" style="display: none;margin-top: 30px;">
+    Thank you! Your payment is done. Please wait a few minutes.
+</div>
+
+  <script src="./Hotel Recipes_files/Rest_order.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
